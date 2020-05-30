@@ -8,11 +8,11 @@
   ],
   "sitemapLocation": "sitemap.json",
   "window":{
-    "navigationBarTitleText": "小程序",
-    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#AB956D",
     "backgroundColor": "#FFFFFF",
-    "backgroundTextStyle": "dark",
+    "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
   },
   "tabBar": {
