@@ -5,25 +5,37 @@ class Home extends Base{
   constructor(){
     super();
   }
-
-  getBannerData(id, callBack){
+  // banner图片信息
+  getBannerData(id, callback){
     var params = {
       url:'banner/'+id,
-      sCallBack:function(res){
-        callBack && callBack(res.items);
+      sCallback:function(res){
+        callback && callback(res.items);
+      }
+    }
+    this.request(params);
+  }
+  // 首页主题
+  getThemeData(callback){
+    var params = {
+      url:'theme/?ids=1,2,3',
+      sCallback:function(data){
+        callback && callback(data);
       }
     }
 
     this.request(params);
+  }
 
-    // wx.request({
-    //   url:'http://s.com/api/v1/banner/' + id,
-    //   method:'GET',
-    //   success:function(res){
-    //     // console.log(res);
-    //     callBack(res);
-    //   }
-    // })
+  getProductsData(callback){
+    var params = {
+      url:'product/recent?count=6',
+      sCallback:function(data){
+        callback && callback(data);
+      }
+    }
+
+    this.request(params);
   }
 }
 
