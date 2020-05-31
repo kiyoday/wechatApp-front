@@ -61,7 +61,15 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/product/product",
+					"pathName": "pages/product/product",
+					"query": "id=11",
+					"scene": null
+				}
+			]
 		}
 	}
 }
