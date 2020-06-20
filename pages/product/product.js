@@ -54,11 +54,11 @@ Page({
 
   /*添加到购物车*/
   onAddingToCartTap:function(events){
-    //防止快速点击
-    // if(this.data.isFly){
-    //   return;
-    // }
-    // this._flyToCartEffect(events);
+    // 防止快速点击
+    if(this.data.isFly){
+      return;
+    }
+    this._flyToCartEffect(events);
     this.addToCart();
   },
 
